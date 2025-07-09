@@ -138,25 +138,25 @@ try{connection.query(
  }
 });
 
-app.get("/contact",(req, res) =>{
-    res.render("contact.ejs")
+// app.get("/contact",(req, res) =>{
+//     res.render("contact.ejs")
     
-});
+// });
 
-app.post("/contact", (req ,res )=>{
-let {name, email, message} = req.body;
-let m = `insert into contact(name , email , message) values("${name}" ,"${email}" ,"${message}" )`;
-try{connection.query(
-  m,
-  function (err, results, ) {
-    if(err) throw err;
+// app.post("/contact", (req ,res )=>{
+// let {name, email, message} = req.body;
+// let m = `insert into contact(name , email , message) values("${name}" ,"${email}" ,"${message}" )`;
+// try{connection.query(
+//   m,
+//   function (err, results, ) {
+//     if(err) throw err;
 
-    console.log(results);
-    res.redirect("contact");
+//     console.log(results);
+//     res.redirect("contact");
 
 
- });}
- catch(err){
-    console.log(err);
- }
-});
+//  });}
+//  catch(err){
+//     console.log(err);
+//  }
+// });
