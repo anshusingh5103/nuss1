@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="Picture1.png" alt="peacock " height="400px"><br>
+     <div>
+    <!-- <button>like</button><br> -->
+    <button id="myButton">like</button>
+    <p id="like">0</p>
+ </div>
+ <% for(c of cnt){ %>
+    <div>
+        <ul>
+            <li><%= c.cmnt %></li><button>X</button>
+           <form action="http://localhost:6500/<%= c.id %>/img" method="post" > <button>edit</button>
+        </form>
+        </ul>
+    </div>
+<% } %>
+ <form action="http://localhost:6500/cmnt" id="cmt" style=" display: none" method="post" >
+<input type="text" placeholder="Add a comment" requireds name="cmnt">
+<button type="submit">ok</button>
+ </form>
+ <button id="aa" onclick=clk()>comment</button>
+ 
+    
+</body>
+<script src="count.js"></script>
+</html>

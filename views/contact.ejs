@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Green Leaf Nursery</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Shyam Tree Plant</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="plants.html">Plants</a>
+      <a href="gallery.html">gallery</a>
+      <a href="#" class="active">Contact</a>
+    </nav>
+  </header>
+
+  <section class="contact">
+    <h2>Contact Us</h2>
+    <p>We'd love to hear from you! Reach out using the form below.</p>
+
+    <form action="http://localhost:5500/contact" method="post" enctype="application/x-www-form-urlencoded">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+
+    <div class="info">
+      <h3>Visit Us</h3>
+      <p>Green Leaf Nursery, Near Main Market,<br> Patna, Bihar – 800001</p>
+      <p><strong>Phone:</strong> +91 60013 21099</p>
+      <p><strong>Email:</strong> info@greenleafnursery.in</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Green Leaf Nursery. All rights reserved.</p>
+  </footer>
+</body>
+</html>
